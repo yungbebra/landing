@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Disallow: /*.pdf$
+Disallow: /*.doc$
+Disallow: /*.xls$
+
+Sitemap: https://hotel-nn.ru/sitemap.xml
+
+User-agent: Yandex
+Allow: /
+
+User-agent: Googlebot
+Allow: /

@@ -1,0 +1,510 @@
+html {
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+body {
+    background: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    color: #393939;
+}
+
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+footer {
+    background-color: #393939;
+    color: white;
+    padding: 2rem 0;
+}
+
+section {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    border-radius: 0 0 1rem 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+a {
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.hero {
+    min-height: 98vh;
+    background-image: 
+    linear-gradient(rgba(28, 28, 28, 0.5), rgba(0, 0, 0, 0.3)),
+    url("https://attache-sadovaya.ru/wp-content/uploads/2021/11/ren_037_ren03663_hd.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.white {
+    color: white;
+}
+
+.btn-main {
+    background-color: rgba(255, 255, 255, 0.2); 
+    font-size: 1rem;
+    border-radius: 8px;
+    box-shadow: none;
+    padding: 10px 20px;
+}
+
+.btn-main:hover, .btn-main:active {
+    background-color: white;
+    color: #393939;
+}
+
+.btn-second {
+    background-color: orange; 
+    font-size: 1rem;
+    border-radius: 8px;
+    box-shadow: none;
+    padding: 15px 30px;
+}
+
+.btn-second:hover, .btn-main:active {
+    background-color: white;
+    color: #393939;
+}
+
+.navbar-nav {
+    gap: 1rem;
+}
+
+.nav-link, .navbar-brand {
+    color: white;
+    font-weight: 100;
+}
+
+.nav-link:visited{
+    color: rgb(222, 222, 222);
+}
+
+.nav-link:hover {
+    color: rgb(222, 222, 222);
+}
+
+.transition {
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.room {
+    border-radius: 2rem;
+}
+
+.heading {
+    padding-top: 3rem;
+}
+
+.navbar-padding {
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+}
+
+.room-card {
+    background: #f8f9fa;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.room-card:hover {  
+    filter: brightness(0.98);
+}
+
+.room-image {
+    height: 240px;
+    background-color: #e9ecef;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.room-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6c757d;
+    font-size: 14px;
+    font-weight: 100;
+    background: linear-gradient(45deg, #e9ecef, #dee2e6);
+}
+
+.room-content {
+    padding: 1rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.room-price {
+    color: #fd7e14;
+    margin-bottom: 14px;
+}
+
+.room-description {
+    color: #6c757d;
+}
+
+.room-features {
+    margin-bottom: 18px;
+    margin-top: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.feature {
+    background-color: #e9ecef;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 100;
+    white-space: nowrap;
+}
+
+.room-actions {
+    margin-top: auto;
+}
+
+.btn-room {
+    width: 100%;
+    background: #393939;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 100;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.btn-room:hover {
+    background: #fd7e14;
+    color: white;
+}
+
+.btn-room:active {
+    transform: scale(0.98);
+}
+
+.advantage-card {
+    background: white;
+    border-radius: 0.75rem;
+    padding: 30px 20px;
+    text-align: center;
+    background: #f8f9fa;
+    transition: filter 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.advantage-card:hover {
+    filter: brightness(0.98);
+}
+
+.advantage-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: #393939;
+}
+
+.advantage-icon svg {
+    width: 32px;
+    height: 32px;
+}
+
+.advantage-card h3 {
+    font-size: 1.25rem;
+}
+
+.advantages-section p {
+    color: #6c757d;
+}
+
+.about-section {
+    background-color: #f8f9fa;
+}
+
+.about-text {
+    color: #6c757d;
+    line-height: 1.5;
+}
+
+.about-image {
+    border-radius: 1rem;
+    height: 100%;
+    min-height: 18.75rem;
+}
+
+.image-placeholder {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 50%, #dee2e6 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6c757d;
+    font-size: 1rem;
+    font-weight: 100;
+    text-align: center;
+    border-radius: inherit;
+    min-height: 18.75rem;
+}
+
+.attraction-card {
+    background: #f8f9fa;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: filter 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.attraction-card:hover {
+    filter: brightness(0.98);
+}
+
+.attraction-card-large {
+    height: 100%;
+}
+
+.attraction-card .card-image {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 50%, #ced4da 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6c757d;
+    font-size: 0.875rem;
+    font-weight: 100;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.card-content {
+    padding: 1rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.attraction-card-large .card-content {
+    padding: 1.5rem;
+}
+
+.address {
+    color: #6c757d;
+    font-weight: 100;
+}
+
+.distance {
+    color: #fd7e14;
+    font-size: 0.875rem;
+    font-weight: 100;
+    margin-bottom: 0;
+}
+
+.contacts-info {
+    padding: 2.5rem;
+    background: #f8f9fa;
+    border-radius: 1rem;
+    height: 100%;
+}
+
+.contact-item {
+    margin-bottom: 2rem;
+}
+
+.contact-item:last-child {
+    margin-bottom: 0;
+}
+
+.contact-text {
+    color: #6c757d;
+}
+
+.contact-link {
+    color: #393939;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    color: #fd7e14;
+}
+
+.contacts-map {
+    height: 100%;
+    min-height: 15rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    border: none;
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+.footer-heading {
+    margin-bottom: 1.5rem;
+}
+
+.footer-text {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+    font-weight: 100;
+}
+
+.footer-nav {
+    margin-bottom: 2rem;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-links li:last-child {
+    margin-bottom: 0;
+}
+
+.footer-link {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 100;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #fd7e14;
+}
+
+.footer-contacts {
+    margin-bottom: 2rem;
+}
+
+.contact-item {
+    margin-bottom: 1rem;
+}
+
+.contact-item:last-child {
+    margin-bottom: 0;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 2rem;
+    margin-top: 2rem;
+}
+
+.footer-copyright {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.875rem;
+    margin-bottom: 0;
+    font-weight: 100;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.social-link {
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    color: #fd7e14;
+    border-color: #fd7e14;
+    background: rgba(253, 126, 20, 0.1);
+}
+
+.nav-link-grey {
+    color:#393939 !important;
+}
